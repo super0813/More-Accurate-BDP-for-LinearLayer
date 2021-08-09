@@ -191,7 +191,7 @@ if __name__ == '__main__':
         m.Params.PoolSolutions = 200000000
         m.optimize()
         Count = m.SolCount
-        print("所有的可行解:", Count)
+        print("All solutions:", Count)
         f.close()
         for e in range(Count):
             solutions = ""
@@ -203,6 +203,6 @@ if __name__ == '__main__':
             f = open(filename_result, "a")
             f.write(item)
             f.write("\n")
-        print("可分路径条数为:", len(s))
+        print("The number of trail:", len(s))
         total.append(len(s))
         print(total)
