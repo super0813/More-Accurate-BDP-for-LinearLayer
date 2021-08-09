@@ -200,10 +200,6 @@ if __name__ == '__main__':
             for i in range(32):
                 solutions += str(round(m.getAttr("Xn")[i]))
             s.add(solutions)
-        for item in s:
-            f = open(filename_result, "a")
-            f.write(item)
-            f.write("\n")
         print("可分路径条数为:", len(s))
         total.append(len(s))
         print(total)
