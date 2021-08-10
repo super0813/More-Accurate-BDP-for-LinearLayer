@@ -329,7 +329,7 @@ def SolveModel(f, Rounds):
 
 
 if __name__ == "__main__":
-    R = 4
+    R = 5
     f.write("Minimize\n")
     ObjectiveFunction(f, R)
     f.write("Subject to\n")
