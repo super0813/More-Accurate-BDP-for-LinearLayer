@@ -204,7 +204,7 @@ def matrix(f, Rounds, num2):
 def init(f):
     initial = [0] * 64
     for i in range(19):
-        initial[i] = 1
+        initial[i] = 0
     for i in range(64):
         f.write("a_0_" + str(i) + " = " + str(initial[i]))
         f.write("\n")
