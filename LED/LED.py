@@ -205,10 +205,6 @@ def init(f):
     initial = [0] * 64
     for i in range(19):
         initial[i] = 1
-    for i in range(20, 64):
-        initial[i] = 1
-    # for i in range(44, 48):
-    #     initial[i] = 1
     for i in range(64):
         f.write("a_0_" + str(i) + " = " + str(initial[i]))
         f.write("\n")
